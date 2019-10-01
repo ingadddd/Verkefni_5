@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 93.75em;
+  padding: 1.25em;
+  font-size: 1em;
+  font-family: sans-serif;
+}
+
+/* Parent */
+.cards {
+  display: flex;
+  background-color: #fff;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-width: 0;
+}
+/* Child */
+.card{
+  width: 29.375em;
+  height: 20em;
+  white-space: wrap;
+  overflow: auto;
+  margin: 0.625em;
+  border: 0.125em solid #aaa;
+  word-break: break-all;
+}
+
+/*Lagfæringar með elements*/
+img {
+  margin: auto;
+  padding-right: 1.25em;
+  max-width: 9.375em;  
+}
+.cards p
+  {
+  white-space: inherit;
+  font: 1em;
+  line-height: 1.25em; 
+  }
+.cards h2{
+  margin-bottom: 1em;
+  font: 1.5em;
+  line-height: 1.5em;
+}
+
+/*Raða eftir röð en nr 5 og 6 virka ekki */
+.cards :nth-child(4) { 
+  order: 2;
+}
+
